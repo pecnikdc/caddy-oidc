@@ -9,7 +9,7 @@ OpenID Connect Relying Party and OAuth 2.0 Resource Server for Caddy HTTP Server
 <!-- TOC START min:2 max:2 link:true update:true -->
   - [Status](#status)
   - [Certification](#certification)
-  - [Implemented specs & features](#implemented-specs--features)
+  - [Planned specs & features](#planned-specs--features)
 
 <!-- TOC END -->
 
@@ -23,8 +23,8 @@ Later.
 
 ## Planned specs & features
 
-The following client/RP features from OpenID Connect/OAuth2.0 specifications are implemented by
-caddy-oidc.
+The following client/RP features from OpenID Connect/OAuth2.0 specifications might one day be
+implemented by caddy-oidc.
 
 - [OpenID Connect Core 1.0 incorporating errata set 1][feature-core]
   - Authorization Flows
@@ -41,7 +41,7 @@ caddy-oidc.
 - [OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 1][feature-registration]
   - Client metadata discovery via Client Configuration Endpoint
 
-The following drafts/experimental specifications are implemented by caddy-oidc.
+The following drafts/experimental specifications might one day be implemented by caddy-oidc.
   - [OpenID Connect Session Management 1.0 - draft 28][feature-session-management]
   - [OpenID Connect Back-Channel Logout 1.0 - draft 04][feature-backchannel-logout]
   - [OpenID Connect Front-Channel Logout 1.0 - draft 02][feature-frontchannel-logout]
