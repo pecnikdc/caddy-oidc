@@ -21,14 +21,16 @@ Still very much in under development.
 
 Later.
 
-## Implemented specs & features
+## Planned specs & features
 
 The following client/RP features from OpenID Connect/OAuth2.0 specifications are implemented by
 caddy-oidc.
 
 - [OpenID Connect Core 1.0 incorporating errata set 1][feature-core]
-  - Authorization Callback
+  - Authorization Flows
     - Authorization Code Flow
+    - Implicit Flow
+    - Hybrid Flow
   - UserInfo Request
   - Offline Access / Refresh Token Grant
   - Client Authentication
@@ -36,10 +38,22 @@ caddy-oidc.
     - client_secret_post
 - [OpenID Connect Discovery 1.0 incorporating errata set 1][feature-discovery]
   - Discovery of OpenID Provider (Issuer) Metadata
+- [OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 1][feature-registration]
+  - Client metadata discovery via Client Configuration Endpoint
+
+The following drafts/experimental specifications are implemented by caddy-oidc.
+  - [OpenID Connect Session Management 1.0 - draft 28][feature-session-management]
+  - [OpenID Connect Back-Channel Logout 1.0 - draft 04][feature-backchannel-logout]
+  - [OpenID Connect Front-Channel Logout 1.0 - draft 02][feature-frontchannel-logout]
+
 
 [travis-image]: https://img.shields.io/travis/panva/caddy-oidc/master.svg?style=flat-square&maxAge=7200
 [travis-url]: https://travis-ci.org/panva/caddy-oidc
 [codecov-image]: https://img.shields.io/codecov/c/github/panva/caddy-oidc/master.svg?style=flat-square&maxAge=7200
 [codecov-url]: https://codecov.io/gh/panva/caddy-oidc
-[feature-core]: http://openid.net/specs/openid-connect-core-1_0.html
-[feature-discovery]: http://openid.net/specs/openid-connect-discovery-1_0.html
+[feature-core]: https://openid.net/specs/openid-connect-core-1_0.html
+[feature-discovery]: https://openid.net/specs/openid-connect-discovery-1_0.html
+[feature-registration]: https://openid.net/specs/openid-connect-registration-1_0.html
+[feature-backchannel-logout]: https://openid.net/specs/openid-connect-backchannel-1_0-04.html
+[feature-frontchannel-logout]: https://openid.net/specs/openid-connect-frontchannel-1_0-02.html
+[feature-session-management]: https://openid.net/specs/openid-connect-session-1_0-28.html
